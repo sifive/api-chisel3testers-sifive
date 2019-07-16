@@ -1,2 +1,8 @@
 [
+    {
+        "commit": "e654fc434e194b0db5b009a646c1509977bedef2",
+        "name": "chisel-testers",
+        "source": "git@github.com:freechipsproject/chisel-testers.git"
+    }
+
 ]
