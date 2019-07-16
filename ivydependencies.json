@@ -1,5 +1,9 @@
 {
-  "chisel-iotesters": {
-    "scalaVersion": "2.12.8"
-  }
+    "chisel-iotesters": {
+        "scalaVersion": "2.12.8",
+        "dependencies": [
+            "edu.berkeley.cs::firrtl-interpreter:1.1.7",
+            "edu.berkeley.cs::treadle:1.0.5"
+        ]
+    }
 }

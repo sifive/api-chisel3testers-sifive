@@ -36,7 +36,7 @@ def buildInfo ver =
 global def chiselIotestersScalaModule =
   def base =
     makeScalaModuleFromJSON here "chisel-iotesters"
-    | setScalaModuleRootDir "chisel-iotesters"
+    | setScalaModuleRootDir "chisel-testers"
     | setScalaModuleDeps (chisel3ScalaModule, Nil)
     | setScalaModuleScalacOptions scalacOpts
   def genSrcs Unit = buildInfo base.getScalaModuleScalaVersion, Nil
