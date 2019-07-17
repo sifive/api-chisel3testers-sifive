@@ -1,9 +1,31 @@
 {
-    "chisel-iotesters": {
+    "chisel-testers": {
         "scalaVersion": "2.12.8",
         "dependencies": [
-            "edu.berkeley.cs::firrtl-interpreter:1.1.7",
-            "edu.berkeley.cs::treadle:1.0.5"
+            "junit:junit:4.12",
+            "org.scalatest::scalatest:3.0.5",
+            "org.scalacheck::scalacheck:1.14.0",
+            "com.github.scopt::scopt:3.7.0"
+        ]
+    },
+    "firrtl-interpreter": {
+        "scalaVersion": "2.12.8",
+        "dependencies": [
+            "junit:junit:4.12",
+            "org.scalatest::scalatest:3.0.5",
+            "org.scalacheck::scalacheck:1.14.0",
+            "org.scala-lang.modules:scala-jline:2.12.1"
+        ]
+    },
+    "treadle": {
+        "scalaVersion": "2.12.8",
+        "dependencies": [
+            "junit:junit:4.12",
+            "org.scalatest::scalatest:3.0.5",
+            "org.scalacheck::scalacheck:1.14.0",
+            "com.github.scopt::scopt:3.7.0",
+            "org.scala-lang.modules:scala-jline:2.12.1",
+            "org.json4s::json4s-native:3.6.1"
         ]
     }
 }

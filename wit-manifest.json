@@ -3,5 +3,15 @@
         "commit": "35b9451a5b06a500e9eda9d7ccd10e09309814f5",
         "name": "chisel-testers",
         "source": "git@github.com:freechipsproject/chisel-testers.git"
+    },
+    {
+        "commit": "f3662c9be196392b1ba318cbbb2a01e545d8a008",
+        "name": "firrtl-interpreter",
+        "source": "git@github.com:freechipsproject/firrtl-interpreter.git"
+    },
+    {
+        "commit": "302f6bf68163390a9ed63e0e2fd057c0c3539f19",
+        "name": "treadle",
+        "source": "git@github.com:freechipsproject/treadle.git"
     }
 ]
