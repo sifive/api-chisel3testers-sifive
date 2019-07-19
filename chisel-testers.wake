@@ -68,7 +68,15 @@ def reportScalaTest report job =
     one, Nil = panic "bad"
     outputs = printReport outputs
 
-global def runScalaTest module tester =
+def runScalaTestWithOpt module tester options=
   def report = "test.report.txt"
-  runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" ("-f", report, "-s", tester, "-Drom=bar", Nil) Nil
-  | reportScalaTest report
+  def cmd = match (head options)
+    None = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" ("-f", report, "-s", tester, "-Drom=bar", Nil) Nil
+    _ = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" (("-f", report, "-s", tester, "-Drom=bar", Nil) ++ options) Nil
+  cmd | reportScalaTest report
+
+global def runScalaTestSuite module tester=
+  runScalaTestWithOpt module tester (Nil)
+
+global def runScalaTest module tester test=
+  runScalaTestWithOpt module tester ("-z", test, Nil)
