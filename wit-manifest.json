@@ -1,16 +1,16 @@
 [
     {
-        "commit": "35b9451a5b06a500e9eda9d7ccd10e09309814f5",
+        "commit": "8ee288cb0f6dca37953bc4a286bfdef5efb345e8",
         "name": "chisel-testers",
         "source": "git@github.com:freechipsproject/chisel-testers.git"
     },
     {
-        "commit": "f3662c9be196392b1ba318cbbb2a01e545d8a008",
+        "commit": "cad193cd8a97065cc4af03f75a955d5b2696b277",
         "name": "firrtl-interpreter",
         "source": "git@github.com:freechipsproject/firrtl-interpreter.git"
     },
     {
-        "commit": "302f6bf68163390a9ed63e0e2fd057c0c3539f19",
+        "commit": "17534a373aa0f822dfdc6e65dd1885621d3285ad",
         "name": "treadle",
         "source": "git@github.com:freechipsproject/treadle.git"
     }
