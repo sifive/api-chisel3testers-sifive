@@ -14,7 +14,7 @@ def macrosParadiseIvyDep =
   | rmapPass extractIvyDep
 
 
-global def treadleVersion = "1.1-050719-SNAPSHOT"
+global def treadleVersion = "v1.1-050719-SNAPSHOT"
 
 def buildInfo ver =
   def content =

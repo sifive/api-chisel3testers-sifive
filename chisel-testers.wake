@@ -14,7 +14,7 @@ def macrosParadiseIvyDep =
   | rmapPass extractIvyDep
 
 
-global def chiselIotestersVersion = "1.3-050719-SNAPSHOT"
+global def chiselIotestersVersion = "v1.3-050719-SNAPSHOT"
 
 def buildInfo ver =
   def content =
