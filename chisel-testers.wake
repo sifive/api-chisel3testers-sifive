@@ -75,6 +75,11 @@ def runScalaTestWithOpt module tester options=
     _ = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" (("-f", report, "-s", tester, "-Drom=bar", Nil) ++ options) Nil
   cmd | reportScalaTest report
 
+global def makeScalaTestModule name root version =
+  makeScalaModule name root version
+  | setScalaModuleSourceDirs ("src/test/scala", Nil)
+  | setScalaModuleResourceDirs ("src/test/resources", Nil)
+
 global def runScalaTestSuite module tester=
   runScalaTestWithOpt module tester (Nil)
 
