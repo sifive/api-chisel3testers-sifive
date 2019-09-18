@@ -68,7 +68,7 @@ def reportScalaTest report job =
     one, Nil = panic "bad"
     outputs = printReport outputs
 
-def runScalaTestWithOpt module tester options=
+global def runScalaTestWithOpt module tester options=
   def report = "test.report.txt"
   def cmd = match (head options)
     None = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" ("-f", report, "-s", tester, "-Drom=bar", Nil) Nil
