@@ -14,7 +14,7 @@ def macrosParadiseIvyDep =
   | rmapPass extractIvyDep
 
 
-global def chiselIotestersVersion = "1.3-050719-SNAPSHOT"
+global def chiselIotestersVersion = "v1.3.0"
 
 def buildInfo ver =
   def content =
@@ -68,7 +68,20 @@ def reportScalaTest report job =
     one, Nil = panic "bad"
     outputs = printReport outputs
 
-global def runScalaTest module tester =
+global def runScalaTestWithOpt module tester options=
   def report = "test.report.txt"
-  runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" ("-f", report, "-s", tester, "-Drom=bar", Nil) Nil
-  | reportScalaTest report
+  def cmd = match (head options)
+    None = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" ("-f", report, "-s", tester, Nil) Nil
+    _ = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" (("-f", report, "-s", tester, Nil) ++ options) Nil
+  cmd | reportScalaTest report
+
+global def makeScalaTestModule name root version =
+  makeScalaModule name root version
+  | setScalaModuleSourceDirs ("src/test/scala", Nil)
+  | setScalaModuleResourceDirs ("src/test/resources", Nil)
+
+global def runScalaTestSuite module tester=
+  runScalaTestWithOpt module tester (Nil)
+
+global def runScalaTest module tester test=
+  runScalaTestWithOpt module tester ("-z", test, Nil)
