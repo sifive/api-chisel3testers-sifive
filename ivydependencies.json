@@ -8,6 +8,13 @@
             "com.github.scopt::scopt:3.7.0"
         ]
     },
+    "chisel-testers2": {
+        "scalaVersion": "2.12.8",
+        "dependencies": [
+            "org.scalatest::scalatest:3.0.5",
+            "com.lihaoyi::utest:0.7.1"
+        ]
+    },
     "firrtl-interpreter": {
         "scalaVersion": "2.12.8",
         "dependencies": [
