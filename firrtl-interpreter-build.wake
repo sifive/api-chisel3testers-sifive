@@ -14,7 +14,7 @@ def macrosParadiseIvyDep =
   | rmapPass extractIvyDep
 
 
-global def firrtlInterpreterVersion = "v1.2-050719-SNAPSHOT"
+global def firrtlInterpreterVersion = "v1.2.0"
 
 def buildInfo ver =
   def content =
