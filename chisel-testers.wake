@@ -71,8 +71,8 @@ def reportScalaTest report job =
 global def runScalaTestWithOpt module tester options=
   def report = "test.report.txt"
   def cmd = match (head options)
-    None = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" ("-f", report, "-s", tester, Nil) Nil
-    _ = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" (("-f", report, "-s", tester, Nil) ++ options) Nil
+    None = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" ("-fF", report, "-s", tester, Nil) Nil
+    _ = runJava module.scalaModuleClasspath "org.scalatest.tools.Runner" (("-fF", report, "-s", tester, Nil) ++ options) Nil
   cmd | reportScalaTest report
 
 global def makeScalaTestModule name root version =
