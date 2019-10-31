@@ -13,5 +13,10 @@
         "commit": "daef09e5ea546eee56d85b588de6cfb2d534de7a",
         "name": "treadle",
         "source": "git@github.com:freechipsproject/treadle.git"
+    },
+    {
+        "commit": "652a248bdcb057c16422320bce45e0c0addb099d",
+        "name": "chisel-testers2",
+        "source": "git@github.com:ucb-bar/chisel-testers2.git"
     }
 ]
