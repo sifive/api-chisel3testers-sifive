@@ -1,0 +1,2 @@
+global def treadleScalaModule =
+  makeScalaModuleFromJSON here "treadle"

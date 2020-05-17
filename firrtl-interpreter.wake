@@ -1,0 +1,2 @@
+global def firrtlInterpreterScalaModule =
+  makeScalaModuleFromJSON here "firrtl-interpreter"
