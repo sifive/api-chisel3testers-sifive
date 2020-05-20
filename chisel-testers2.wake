@@ -33,7 +33,7 @@ def buildInfo ver =
   def outFile = "{outDir.getPathName}/BuildInfo.scala"
   write outFile (content | catWith "\n")
 
-global def chiselIotesters2ScalaModule =
+global def chiselTesters2ScalaModule =
   def base =
     makeScalaModuleFromJSON here "chisel-testers2"
     | setScalaModuleRootDir "chisel-testers2"
