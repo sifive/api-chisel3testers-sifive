@@ -1,5 +1,10 @@
 [
     {
+        "commit": "8342aaa2a76aceeae9bf52d81ec7ae025a9993ce",
+        "name": "api-scalatest-sifive",
+        "source": "git@github.com:sifive/api-scalatest-sifive.git"
+    },
+    {
         "commit": "v1.4.1",
         "name": "chisel-testers",
         "source": "git@github.com:freechipsproject/chisel-testers.git"
