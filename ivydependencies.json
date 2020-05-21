@@ -1,6 +1,6 @@
 {
     "chisel-testers": {
-        "scalaVersion": "2.12.10",
+        "scalaVersion": "2.12.8",
         "dependencies": [
             "junit:junit:4.13",
             "org.scalatest::scalatest:3.0.8",
@@ -9,21 +9,21 @@
         ]
     },
     "chisel-testers2": {
-        "scalaVersion": "2.12.10",
+        "scalaVersion": "2.12.8",
         "dependencies": [
             "org.scalatest::scalatest:3.0.8",
             "com.lihaoyi::utest:0.7.4"
         ]
     },
     "firrtl-interpreter": {
-        "scalaVersion": "2.12.10",
+        "scalaVersion": "2.12.8",
         "dependencies": [
             "junit:junit:4.12",
             "org.scala-lang.modules:scala-jline:2.12.1"
         ]
     },
     "treadle": {
-        "scalaVersion": "2.12.10",
+        "scalaVersion": "2.12.8",
         "dependencies": [
             "junit:junit:4.12",
             "com.github.scopt::scopt:3.7.1",
